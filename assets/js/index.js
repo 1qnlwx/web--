@@ -20,11 +20,11 @@ const renderAvtar=(user)=>{
     // console.log(uname);
     $('#welcome').html(`欢迎 ${uname}`)
     if(user.user_pic!==null){
-        $('#layui-nav-img').attr('scr',user.user_pic)
+        $('.layui-nav-img').attr('scr',user.user_pic)
         $('.text-avatar').hide()
     }else{
         $('.text-avatar').html(uname[0].toUpperCase())
-        $('#layui-nav-img').hide()
+        $('.layui-nav-img').hide()
     }
 }
 $('#btnlogout').click(()=>{
